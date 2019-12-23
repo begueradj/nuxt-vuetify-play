@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -58,9 +58,17 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <v-img
+        src="https://picsum.photos/id/11/500/300"
+      >
+        <v-container justify-center fill-height>
+          <v-row justify="center" align="center">
+            <v-col cols="12" justify="center" style="border: 1px solid;">
+              <nuxt />
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-img>
     </v-content>
     <v-navigation-drawer
       v-model="rightDrawer"
@@ -112,6 +120,9 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
+  },
+  created () {
+    console.log('created')
   }
 }
 </script>
