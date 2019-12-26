@@ -58,17 +58,13 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <v-img
-        src="https://picsum.photos/id/11/500/300"
-      >
-        <v-container justify-center fill-height>
-          <v-row justify="center" align="center">
-            <v-col cols="12" justify="center" style="border: 1px solid;">
-              <nuxt />
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-img>
+      <v-container justify-center fill-height>
+        <v-row justify="center" align="center">
+          <v-col cols="12" justify="center" style="border: 1px solid;">
+            <nuxt />
+          </v-col>
+        </v-row>
+      </v-container>
     </v-content>
     <v-navigation-drawer
       v-model="rightDrawer"
